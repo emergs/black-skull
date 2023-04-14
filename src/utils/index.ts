@@ -2,6 +2,9 @@ import cart from "../assets/images/ShoppingCart.svg"
 import user from "../assets/images/User.svg"
 import protein from "../assets/images/proteinMuscle.svg"
 import whey from "../assets/images/whey.svg"
+import partner1 from "../assets/images/partner1.svg"
+import partner2 from "../assets/images/partner2.svg"
+import partner3 from "../assets/images/partner3.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -59,12 +62,9 @@ export const products = [
 ]
 
 export const partners = [
-  { name: 'cedric mcmillan', img: '', description: '' },
-  { name: 'cedric mcmillan', img: '', description: '' },
-  { name: 'cedric mcmillan', img: '', description: '' },
-  { name: 'cedric mcmillan', img: '', description: '' },
-  { name: 'cedric mcmillan', img: '', description: '' },
-  { name: 'cedric mcmillan', img: '', description: '' }
+  { name: 'cedric mcmillan', img: partner1, description: '' },
+  { name: 'cedric mcmillan', img: partner2, description: '' },
+  { name: 'cedric mcmillan', img: partner3, description: '' },
 ]
 
 export const blogContent = [

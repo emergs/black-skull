@@ -1,9 +1,11 @@
 import { partners } from "../../utils"
+import Button from "../Button"
+import { PartnerStyled } from "./styled"
 
 const Partners = () => {
   return (
-    <section>
-      <h2>Conheça a Tropa Black Skull</h2>
+    <PartnerStyled>
+      <h2>Conheça a Tropa <em>Black Skull</em></h2>
       <nav>
         <ul>
           {
@@ -17,7 +19,10 @@ const Partners = () => {
           }
         </ul>
       </nav>
-    </section>
+      <div> 
+        <Button>Ver Todos</Button>
+      </div>
+    </PartnerStyled>
   )
 }
 
