@@ -1,6 +1,7 @@
 import cart from "../assets/images/ShoppingCart.svg"
 import user from "../assets/images/User.svg"
 import protein from "../assets/images/proteinMuscle.svg"
+import whey from "../assets/images/whey.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -51,14 +52,10 @@ export const listCategories = [
 ]
 
 export const products = [
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: '' }
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey }
 ]
 
 export const partners = [

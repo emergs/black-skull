@@ -1,10 +1,11 @@
 import { products } from "../../utils"
 import CardProducts from "../CardProducts"
+import { ShowCaseStyled } from "./styled"
 
 const ShowCase = ({ title }: any) => {
   return (
-    <section>
-      <h1>{title}</h1>
+    <ShowCaseStyled>
+      <h2>{title}</h2>
       <nav>
         <ul>
           {
@@ -14,7 +15,7 @@ const ShowCase = ({ title }: any) => {
           }
         </ul>
       </nav>
-    </section>
+    </ShowCaseStyled>
   )
 }
 
