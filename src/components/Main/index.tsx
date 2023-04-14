@@ -1,18 +1,25 @@
-import Button from "../Button"
+import About from "../About"
+import Blog from "../Blog"
+import Entrance from "../Entrance"
+import OptionsUser from "../OptionsUser"
+import Partners from "../Partners"
 import ProductsCategory from "../ProductsCategory"
 import ShowCase from "../ShowCase"
+import Target from "../Target"
 
 const Main = () => {
   return (
-    <>
-    <section>
-      <h1>Ajudando você a ter mais performance</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-      <Button>Botão</Button>
-    </section>
-    <ProductsCategory/>
-    <ShowCase/>
-    </>
+    <main>
+      <Entrance />
+      <ProductsCategory />
+      <ShowCase title="Lançamentos" />
+      <Partners />
+      <ShowCase title="Promoções" />
+      <Blog />
+      <Target />
+      <OptionsUser />
+      <About />
+    </main>
   )
 }
 

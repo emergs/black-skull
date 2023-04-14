@@ -1,21 +1,21 @@
-import {products} from "../../utils"
+import { products } from "../../utils"
 import CardProducts from "../CardProducts"
 
-const ShowCase = ()=>{
-  return(
+const ShowCase = ({ title }: any) => {
+  return (
     <section>
-      <h1></h1>
+      <h1>{title}</h1>
       <nav>
         <ul>
           {
-            products.map((product)=>{
-              return <CardProducts product={product}/>
+            products.map((product) => {
+              return <CardProducts product={product} />
             })
           }
         </ul>
-      </nav>  
+      </nav>
     </section>
   )
 }
- 
+
 export default ShowCase

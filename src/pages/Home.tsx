@@ -1,13 +1,14 @@
-import logo from "../assets/images/logo-primary.svg"
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Main from "../components/Main";
 
 function Home() {
   return (
-    <main>
+    <>
       <Header />
       <Main />
-    </main>
+      <Footer />
+    </>
   );
 }
 

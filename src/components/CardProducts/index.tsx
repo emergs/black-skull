@@ -1,7 +1,5 @@
-import { IProducts } from "../../interfaces"
-
-const CardProducts = ({product}:any)=>{
-  return(
+const CardProducts = ({ product }: any) => {
+  return (
     <li>
       <figure>
         <img src={product.img} alt={product.name} />
@@ -12,5 +10,5 @@ const CardProducts = ({product}:any)=>{
     </li>
   )
 }
- 
+
 export default CardProducts
