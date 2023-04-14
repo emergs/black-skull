@@ -5,7 +5,7 @@ import logo from "../assets/images/logo-primary.svg"
 function App() {
   return (
     <div className="App">
-      initial
+      <span>initial</span>
       <img src={logo} alt="" />
     </div>
   );
