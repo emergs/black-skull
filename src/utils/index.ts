@@ -1,6 +1,6 @@
 import cart from "../assets/images/ShoppingCart.svg"
 import user from "../assets/images/User.svg"
-import whishlist from "../assets/images/Whishlist.svg"
+import protein from "../assets/images/proteinMuscle.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -34,7 +34,7 @@ export const navbarUserOptions: IUserOptions[] = [
     name: 'profile', icon: user
   },
   {
-    name: 'favorites', icon: whishlist
+    name: 'favorites', icon: user
   },
   {
     name: 'cart', icon: cart
@@ -42,24 +42,12 @@ export const navbarUserOptions: IUserOptions[] = [
 ]
 
 export const listCategories = [
-  {
-    name: 'Proteínas', img: '#', link: "#"
-  },
-  {
-    name: 'Hipercalóricos', img: '#', link: "#"
-  },
-  {
-    name: 'Creatina', img: '#', link: "#"
-  },
-  {
-    name: 'Packs', img: '#', link: "#"
-  },
-  {
-    name: 'Aminoácidos', img: '#', link: "#"
-  },
-  {
-    name: 'Saúde', img: '#', link: "#"
-  },
+  { name: 'Proteínas', img: protein, link: "#" },
+  { name: 'Hipercalóricos', img: protein, link: "#" },
+  { name: 'Creatina', img: protein, link: "#" },
+  { name: 'Packs', img: protein, link: "#" },
+  { name: 'Aminoácidos', img: protein, link: "#" },
+  { name: 'Saúde', img: protein, link: "#" },
 ]
 
 export const products = [

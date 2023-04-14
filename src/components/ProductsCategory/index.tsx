@@ -1,15 +1,18 @@
 import { listCategories } from "../../utils"
+import { ProductsCategoryStyled } from "./styled"
 
 const ProductsCategory = () => {
   return (
-    <section>
+    <ProductsCategoryStyled>
       <nav>
         <ul>
           {
             listCategories.map((product) => {
               return <li>
                 <figure>
-                  <img src={product.img} alt={product.name} />
+                  <div>
+                    <img src={product.img} alt={product.name} />
+                  </div>
                   <figcaption>{product.name}</figcaption>
                 </figure>
               </li>
@@ -17,7 +20,7 @@ const ProductsCategory = () => {
           }
         </ul>
       </nav>
-    </section>
+    </ProductsCategoryStyled>
   )
 }
 
