@@ -1,12 +1,15 @@
 import Button from "../Button"
+import { EntranceStyled } from "./styled"
 
 const Entrance = () => {
   return (
-    <section>
-      <h1>Ajudando você a ter mais performance</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-      <Button>Botão</Button>
-    </section>
+    <EntranceStyled>
+      <div>
+        <h1>Ajudando você a ter <em>mais performance</em></h1>
+        <p>Com determinação e paixão, você pode superar os desafios, conquistar novos recordes e alcançar o impossível. Seja forte, seja corajoso, seja um verdadeiro atleta e deixe sua marca no mundo!</p>
+        <Button>Confira</Button>
+      </div>
+    </EntranceStyled>
   )
 }
 
