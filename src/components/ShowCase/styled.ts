@@ -16,6 +16,7 @@ export const ShowCaseStyled = styled.section`
 
   ul{
     display: flex;
+    justify-content: center;
     gap: 20px;
     height: 341px;
     margin-bottom: 143px;
