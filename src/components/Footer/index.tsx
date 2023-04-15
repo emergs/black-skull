@@ -1,12 +1,15 @@
 import { footerOptions, footerOptions2, socialMedia } from "../../utils"
 import Button from "../Button"
+import { FooterStyled } from "./styled"
+import logoWicomm from "../../assets/images/logoWicomm.svg"
+import logoVtex from "../../assets/images/logoVtex.svg"
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <div>
-          <div>
+    <FooterStyled>
+      <div className="footerTop">
+        <div className="footerLinks">
+          <div className="footerSocialMedias">
             <figure>
               <img src="" alt="" />
               <span>Nos siga:</span>
@@ -25,7 +28,7 @@ const Footer = () => {
               </nav>
             </figure>
           </div>
-          <div>
+          <div className="footerLists">
             {
               footerOptions.map((elem) => {
                 return <div>
@@ -60,26 +63,28 @@ const Footer = () => {
             }
           </div>
         </div>
-        <div>
-          <h2>fique por dentro</h2>
+        <div className="footerForm">
+          <h2>fique por <em>dentro</em></h2>
           <span>Inscreva-se e seja o primeiro a saber sobre as novidades, promoções e muito mais!</span>
-          <div>
-            <input type="text" />
-            <input type="text" />
+          <div className="footerInputs">
+            <input type="text" value="Digite seu nome" />
+            <input type="text" value="Digite seu email" />
           </div>
           <Button>enviar</Button>
         </div>
       </div>
-      <div>
+      <div className="footerBottom">
         <span>Black Skull 2022. Todos os direitos reservados.</span>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        <figure>
-          <img src="" alt="" />
-        </figure>
+        <div className="footerLogos">
+          <figure>
+            <img src={logoWicomm} alt="logo da Wicomm" />
+          </figure>
+          <figure>
+            <img src={logoVtex} alt="logo da Vtex" />
+          </figure>
+        </div>
       </div>
-    </footer>
+    </FooterStyled>
   )
 }
 
