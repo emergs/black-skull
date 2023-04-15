@@ -9,3 +9,7 @@ export interface IProducts {
   price: string,
   img: string
 }
+
+export interface IDivLists {
+  width: string,
+}

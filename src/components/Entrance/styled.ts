@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../../assets/images/imageMain.svg"
 
 export const EntranceStyled = styled.section`
   height: 548px;

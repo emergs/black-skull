@@ -12,6 +12,22 @@ import ganhoDeMassa from "../assets/images/ganhoDeMassa.svg"
 import energia from "../assets/images/energia.svg"
 import recuperacaoMuscular from "../assets/images/recuperacaoMuscular.svg"
 import emagrecimento from "../assets/images/emagrecimento.svg"
+import facebook from "../assets/images/facebook.svg"
+import instagram from "../assets/images/instagram.svg"
+import youtube from "../assets/images/youtube.svg"
+import twiter from "../assets/images/twitter.svg"
+import tiktok from "../assets/images/tiktok.svg"
+import mercadoPago from "../assets/images/mercadoPago.svg"
+import visa from "../assets/images/visa.svg"
+import mastercard from "../assets/images/mastercard.svg"
+import hipercard from "../assets/images/hipercard.svg"
+import pix from "../assets/images/pix.svg"
+import amex from "../assets/images/amex.svg"
+import dinners from "../assets/images/dinners.svg"
+import elo from "../assets/images/elo.svg"
+import boleto from "../assets/images/boleto.svg"
+import vtex from "../assets/images/vtex.svg"
+import ebit from "../assets/images/ebit.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -20,36 +36,18 @@ export interface IUserOptions {
 }
 
 export const navbarOptions = [
-  {
-    name: 'categorias', link: '#'
-  },
-  {
-    name: 'vestuário', link: '#'
-  },
-  {
-    name: 'objetivos', link: '#'
-  },
-  {
-    name: 'promoçôes', link: '#'
-  },
-  {
-    name: 'atletas', link: '#'
-  },
-  {
-    name: 'assinatura', link: '#'
-  }
+  { name: 'categorias', link: '#' },
+  { name: 'vestuário', link: '#' },
+  { name: 'objetivos', link: '#' },
+  { name: 'promoçôes', link: '#' },
+  { name: 'atletas', link: '#' },
+  { name: 'assinatura', link: '#' }
 ]
 
 export const navbarUserOptions: IUserOptions[] = [
-  {
-    name: 'profile', icon: user
-  },
-  {
-    name: 'favorites', icon: user
-  },
-  {
-    name: 'cart', icon: cart
-  }
+  { name: 'profile', icon: user },
+  { name: 'favorites', icon: user },
+  { name: 'cart', icon: cart }
 ]
 
 export const listCategories = [
@@ -89,8 +87,8 @@ export const targets = [
 
 export const footerOptions = [
   {
-    title: 'BlackSkull usa', content: [
-      { title: 'sobre nós', link: '#' },
+    title: 'BlackSkull usa', width: '141', content: [
+      { title: 'Sobre Nós', link: '#' },
       { title: 'Black Skull é confiável?', link: '#' },
       { title: 'Atletas Black Skull', link: '#' },
       { title: 'Nosso Blog', link: '#' },
@@ -99,7 +97,7 @@ export const footerOptions = [
     ]
   },
   {
-    title: 'Institucional', content: [
+    title: 'Institucional', width: '160', content: [
       { title: 'Trocas e Devoluções', link: '#' },
       { title: 'Política de Entregas', link: '#' },
       { title: 'Política de Privacidade', link: '#' },
@@ -107,7 +105,7 @@ export const footerOptions = [
     ]
   },
   {
-    title: 'afiliados', content: [
+    title: 'afiliados', width: '156', content: [
       { title: 'Programa de Afiliados', link: '#' },
       { title: 'Desconto para Militares', link: '#' },
       { title: 'Benefícios para Profissionais da Saúde', link: '#' },
@@ -120,29 +118,29 @@ export const footerOptions = [
 export const footerOptions2 = [
   {
     title: 'Formas de pagamento', content: [
-      { title: 'mercado pago', link: '#', img: '' },
-      { title: 'visa', link: '#', img: '' },
-      { title: 'master card', link: '#', img: '' },
-      { title: 'hipercard', link: '#', img: '' },
-      { title: 'pix', link: '#', img: '' },
-      { title: 'amex', link: '#', img: '' },
-      { title: 'dinners', link: '#', img: '' },
-      { title: 'elo', link: '#', img: '' },
-      { title: 'boleto', link: '#', img: '' },
+      { title: 'mercadopago', link: '#', img: mercadoPago },
+      { title: 'visa', link: '#', img: visa },
+      { title: 'mastercard', link: '#', img: mastercard },
+      { title: 'hipercard', link: '#', img: hipercard },
+      { title: 'pix', link: '#', img: pix },
+      { title: 'amex', link: '#', img: amex },
+      { title: 'dinners', link: '#', img: dinners },
+      { title: 'elo', link: '#', img: elo },
+      { title: 'boleto', link: '#', img: boleto },
     ]
   },
   {
     title: 'segurança', content: [
-      { title: 'vtex', link: '#', img: '' },
-      { title: 'ebit', link: '#', img: '' }
+      { title: 'vtex', link: '#', img: vtex },
+      { title: 'ebit', link: '#', img: ebit }
     ]
   },
 ]
 
 export const socialMedia = [
-  { name: 'facebook', link: '#', icon: '' },
-  { name: 'instagram', link: '#', icon: '' },
-  { name: 'youtube', link: '#', icon: '' },
-  { name: 'twiter', link: '#', icon: '' },
-  { name: 'tiktok', link: '#', icon: '' }
+  { name: 'facebook', link: '#', icon: facebook },
+  { name: 'instagram', link: '#', icon: instagram },
+  { name: 'youtube', link: '#', icon: youtube },
+  { name: 'twiter', link: '#', icon: twiter },
+  { name: 'tiktok', link: '#', icon: tiktok }
 ]

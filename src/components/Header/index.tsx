@@ -1,4 +1,4 @@
-import { IUserOptions, navbarOptions, navbarUserOptions } from "../../utils"
+import { navbarOptions, navbarUserOptions } from "../../utils"
 import { HeaderStyled, Navbar, TopContent } from "./style";
 import logo from "../../assets/images/logoPrimary.svg"
 import truck from "../../assets/images/Truck.svg"
