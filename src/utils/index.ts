@@ -8,6 +8,10 @@ import partner3 from "../assets/images/partner3.svg"
 import blog1 from "../assets/images/blog1.svg"
 import blog2 from "../assets/images/blog2.svg"
 import blog3 from "../assets/images/blog3.svg"
+import ganhoDeMassa from "../assets/images/ganhoDeMassa.svg"
+import energia from "../assets/images/energia.svg"
+import recuperacaoMuscular from "../assets/images/recuperacaoMuscular.svg"
+import emagrecimento from "../assets/images/emagrecimento.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -77,10 +81,10 @@ export const blogContent = [
 ]
 
 export const targets = [
-  { title: 'ganho de massa', img: '#', link: '#' },
-  { title: 'energia', img: '#', link: '#' },
-  { title: 'recuperação muscular', img: '#', link: '#' },
-  { title: 'emagrecimento', img: '#', link: '#' },
+  { title: 'ganho de massa', img: ganhoDeMassa, link: '#' },
+  { title: 'energia', img: energia, link: '' },
+  { title: 'recuperação muscular', img: recuperacaoMuscular, link: '#' },
+  { title: 'emagrecimento', img: emagrecimento, link: '#' },
 ]
 
 export const footerOptions = [

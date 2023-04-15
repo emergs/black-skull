@@ -1,8 +1,10 @@
 import { targets } from "../../utils"
+import { TargetStyled } from "./styled"
 
 const Target = () => {
   return (
-    <section>
+    <TargetStyled>
+      <h2>Objetivos</h2>
       <nav>
         <ul>
           {
@@ -17,7 +19,7 @@ const Target = () => {
           }
         </ul>
       </nav>
-    </section>
+    </TargetStyled>
   )
 }
 
