@@ -1,11 +1,11 @@
 import About from "../About"
 import Blog from "../Blog"
 import Entrance from "../Entrance"
-import OptionsUser from "../OptionsUser"
 import Partners from "../Partners"
 import ProductsCategory from "../ProductsCategory"
 import ShowCase from "../ShowCase"
 import Target from "../Target"
+import Card from "../Card"
 
 const Main = () => {
   return (
@@ -17,7 +17,7 @@ const Main = () => {
       <ShowCase title="Promoções" />
       <Blog />
       <Target />
-      <OptionsUser />
+      <Card />
       <About />
     </main>
   )
