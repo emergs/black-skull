@@ -1,13 +1,14 @@
 import { blogContent } from "../../utils"
 import Button from "../Button"
 import CardBlog from "../CardBlog"
+import { BlogStyled } from "./styled"
 
 const Blog = () => {
   return (
-    <section>
+    <BlogStyled>
       <div>
-        <h2>Confira o nosso blog</h2>
-        <Button>button</Button>
+        <h2>Confira o <em>nosso blog</em></h2>
+        <Button>ler todos</Button>
       </div>
       <nav>
         <ul>
@@ -18,7 +19,7 @@ const Blog = () => {
           }
         </ul>
       </nav>
-    </section>
+    </BlogStyled>
   )
 }
 

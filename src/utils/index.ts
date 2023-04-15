@@ -5,6 +5,9 @@ import whey from "../assets/images/whey.svg"
 import partner1 from "../assets/images/partner1.svg"
 import partner2 from "../assets/images/partner2.svg"
 import partner3 from "../assets/images/partner3.svg"
+import blog1 from "../assets/images/blog1.svg"
+import blog2 from "../assets/images/blog2.svg"
+import blog3 from "../assets/images/blog3.svg"
 import { ReactNode } from "react";
 
 export interface IUserOptions {
@@ -68,12 +71,9 @@ export const partners = [
 ]
 
 export const blogContent = [
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
-  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: '#' },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog1 },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog2 },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog3 },
 ]
 
 export const targets = [

@@ -1,17 +1,18 @@
 import Button from "../Button"
+import { CardBlogStyled } from "./styled"
 
 const CardBlog = ({ blog }: any) => {
   return (
-    <li>
+    <CardBlogStyled>
       <figure>
         <img src={blog.img} alt={blog.title} />
-        <figcaption>
+        <div className="infoBlog">
           <span>{blog.date}</span>
-          <span>{blog.title}</span>
-          <Button>Button</Button>
-        </figcaption>
+          <figcaption>{blog.title}</figcaption>
+          <Button>Ler mais</Button>
+        </div>
       </figure>
-    </li>
+    </CardBlogStyled>
   )
 }
 
