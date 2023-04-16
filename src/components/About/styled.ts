@@ -5,10 +5,16 @@ export const AboutStyled = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
-  /* h2, p{
-    text-align: center;
-  } */
+  img{
+    width: 150.4px;
+    height: 150.4px;
+    position: absolute;
+    left: 565.8px;
+    bottom: 185px;
+    opacity: 0.05;
+  }
 
   h2{
     margin-top: 160px;

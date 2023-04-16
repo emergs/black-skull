@@ -1,10 +1,11 @@
 import { AboutStyled } from "./styled"
+import logo from "../../assets/images/logoSecondary.svg"
 
 const About = () => {
   return (
     <AboutStyled>
       <figure>
-        <img src="" alt="" />
+        <img src={logo} alt="logo da black skull" />
       </figure>
       <h2>Sobre a Black Skull</h2>
       <p>
