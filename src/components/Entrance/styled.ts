@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import background from "../../assets/images/imageMain.svg"
 
 export const EntranceStyled = styled.section`
   height: 548px;
@@ -6,6 +7,7 @@ export const EntranceStyled = styled.section`
   padding-bottom: 130px;
   padding-left: 155px;
   background-color: gray;
+  background-image: url(${background});
 
   div{
     width: 551px;
