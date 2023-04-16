@@ -3,28 +3,40 @@ import Button from "../Button"
 import { PartnerStyled } from "./styled"
 import { HiArrowRight } from "react-icons/hi"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const Partners = () => {
+
+  const [isHovered, setIsHovered] = useState(Array(partners.length).fill(false));
+
+  const handleHover = (indexElement: number) => {
+    setIsHovered((card) => {
+      return card.map((state, index) => {
+        return indexElement === index ? !state : state
+      })
+    });
+  };
+
   return (
     <PartnerStyled>
       <h2>Conheça a Tropa <em>Black Skull</em></h2>
       <nav>
         <ul>
           {
-            partners.map((partner) => {
-              return <li>
+            partners.map((partner, index) => {
+              return <li key={index}>
                 <figure>
-                  <img src={partner.img} alt={partner.name} />
+                  <motion.img
+                    src={partner.img}
+                    alt={partner.name}
+                    onMouseEnter={() => handleHover(index)}
+                    onMouseLeave={() => handleHover(index)}
+                  />
                   <motion.div
                     className="infoPartners"
-                    whileHover={{
-                      width: '100%',
-
-                      opacity: 1
-                    }}
-                    initial={{
-                      width: '0%',
-                      opacity: 0
+                    animate={{
+                      width: isHovered[index] ? '100%' : '0%',
+                      opacity: isHovered[index] ? 1 : 0
                     }}
                   >
                     <h4>{partner.name}</h4>
