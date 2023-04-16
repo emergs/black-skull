@@ -42,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  li, button{
+    cursor: pointer;
+  }
+
   body{
     max-width: 1280px;
     margin: 0 auto;

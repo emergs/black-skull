@@ -1,5 +1,6 @@
 import cart from "../assets/images/ShoppingCart.svg"
-import user from "../assets/images/User.svg"
+import profile from "../assets/images/User.svg"
+import whishlist from "../assets/images/Whishlist.svg"
 import protein from "../assets/images/proteinMuscle.svg"
 import whey from "../assets/images/whey.svg"
 import partner1 from "../assets/images/partner1.svg"
@@ -30,11 +31,6 @@ import vtex from "../assets/images/vtex.svg"
 import ebit from "../assets/images/ebit.svg"
 import { ReactNode } from "react";
 
-export interface IUserOptions {
-  name: string,
-  icon: ReactNode
-}
-
 export const navbarOptions = [
   { name: 'categorias', link: '#' },
   { name: 'vestuário', link: '#' },
@@ -44,9 +40,9 @@ export const navbarOptions = [
   { name: 'assinatura', link: '#' }
 ]
 
-export const navbarUserOptions: IUserOptions[] = [
-  { name: 'profile', icon: user },
-  { name: 'favorites', icon: user },
+export const navbarUserOptions = [
+  { name: 'profile', icon: profile },
+  { name: 'favorites', icon: whishlist },
   { name: 'cart', icon: cart }
 ]
 

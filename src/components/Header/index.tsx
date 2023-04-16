@@ -30,13 +30,17 @@ function Header() {
           </ul>
         </nav>
         <div className="inputSearch">
-          <input type="text" value="Buscar" />
+          <input type="text" placeholder="Buscar" />
         </div>
         <nav className="navOptionsUser">
           <ul>
             {
               navbarUserOptions.map((elem) => {
-                return <li>{elem.name}</li>
+                return <li>
+                  <figure>
+                    <img src={elem.icon} alt={elem.name} />
+                  </figure>
+                </li>
               })
             }
           </ul>
