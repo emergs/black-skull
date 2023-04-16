@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
     --barlow22-700:700 22px 'Barlow', sans-serif;
     --barlow14-700-italic:italic 700 14px 'Barlow', sans-serif;
 
+    --roboto16-700:italic 700 16px 'Roboto Condensed', sans-serif;
     --roboto32-700:italic 700 32px 'Roboto Condensed', sans-serif;
     --roboto40-700:italic 700 40px 'Roboto Condensed', sans-serif;
     --roboto56-700:italic 700 56px 'Roboto Condensed', sans-serif;
