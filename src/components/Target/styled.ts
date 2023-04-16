@@ -21,19 +21,37 @@ export const TargetStyled = styled.section`
       width: 277px;
       height: 100%;
       position: relative;
+      overflow: hidden;
 
       figcaption{
         position: absolute;
+        bottom: 12px;
+        left: 16px;
+        font: var(--barlow14-700);
+        text-transform: uppercase;
+        z-index: 1;
+      }
+
+      .rectangleMain{
+        position: absolute;
         bottom: 0;
         left: 0;
-        font: var(--barlow14-700);
-        background-color: var(--orange1);
-        width: 212px;
-        height: 40px;
-        padding-left: 16px;
-        padding-top: 12px;
-        text-transform: uppercase;
+      }
+
+      .rectangle1{
+        position: absolute;
+        bottom: 0;
+        left: 180px;
+      }
+
+      .rectangle2{
+        position: absolute;
+        bottom: 0;
+        left: 180px;
       }
     }
+
+
+    
   }
 `
