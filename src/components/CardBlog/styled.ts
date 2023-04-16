@@ -4,12 +4,14 @@ export const CardBlogStyled = styled.li`
   height: 100%;
   width: 376px;
   border: 1px solid var(--dark3);
+  overflow: hidden;
 
-  img{
+  .blog-image{
     height: 200px;
+    overflow: hidden;
   }
 
-  .infoBlog{
+  .blog-info{
     padding: 15px 32px 24px 24px;
     height: 180px;
     display: flex;
@@ -27,6 +29,15 @@ export const CardBlogStyled = styled.li`
       color:var(--white);
       margin-bottom: 24px;
       text-transform: uppercase;
+    }
+
+    .blog-button-card{
+      position: relative;
+
+      img{
+        position: absolute;
+        left: 0;
+      }
     }
   }
 `
