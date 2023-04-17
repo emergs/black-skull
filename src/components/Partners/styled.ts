@@ -42,7 +42,7 @@ export const PartnerStyled = styled.section`
           left: 0;
           width: 100%;
           height: 30%;
-          background-color: gray;
+          background-color: var(--dark1);
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;

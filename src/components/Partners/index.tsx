@@ -24,19 +24,17 @@ const Partners = () => {
         <ul>
           {
             partners.map((partner, index) => {
-              return <li key={index}>
+              return <motion.li key={index}
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={() => handleHover(index)}
+              >
                 <figure>
-                  <motion.img
-                    src={partner.img}
-                    alt={partner.name}
-                    onMouseEnter={() => handleHover(index)}
-                    onMouseLeave={() => handleHover(index)}
-                  />
+                  <img src={partner.img} alt={partner.name} />
                   <motion.div
                     className="infoPartners"
                     animate={{
-                      width: isHovered[index] ? '100%' : '0%',
-                      opacity: isHovered[index] ? 1 : 0
+                      width: isHovered[index] ? '100%' : '0px',
+                      opacity: isHovered[index] ? 0.9 : 0
                     }}
                   >
                     <h4>{partner.name}</h4>
@@ -46,7 +44,7 @@ const Partners = () => {
                     </a>
                   </motion.div>
                 </figure>
-              </li>
+              </motion.li>
             })
           }
         </ul>
