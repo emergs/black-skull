@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const ProductsCategoryStyled = styled.section`
   height: 330px;
   background-color: var(--white);
+  position: relative;
+
+  svg{
+    width: 70%;
+    height: 100%;
+  }
 
   ul{
     display: flex;

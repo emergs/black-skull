@@ -11,7 +11,8 @@ export const AboutStyled = styled.article`
     width: 150.4px;
     height: 150.4px;
     position: absolute;
-    left: 565.8px;
+    left: 50%;
+    transform: translate(-50%);
     bottom: 185px;
     opacity: 0.05;
   }

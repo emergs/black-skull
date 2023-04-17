@@ -29,6 +29,9 @@ import elo from "../assets/images/elo.svg"
 import boleto from "../assets/images/boleto.svg"
 import vtex from "../assets/images/vtex.svg"
 import ebit from "../assets/images/ebit.svg"
+import { BiUserCircle } from "react-icons/bi"
+import { AiOutlineStar } from "react-icons/ai"
+import { BsCart2 } from "react-icons/bs"
 import { ReactNode } from "react";
 
 export const navbarOptions = [
@@ -41,9 +44,9 @@ export const navbarOptions = [
 ]
 
 export const navbarUserOptions = [
-  { name: 'profile', icon: profile },
-  { name: 'favorites', icon: whishlist },
-  { name: 'cart', icon: cart }
+  { name: 'profile', icon: <BiUserCircle /> },
+  { name: 'favorites', icon: <AiOutlineStar /> },
+  { name: 'cart', icon: <BsCart2 /> }
 ]
 
 export const listCategories = [

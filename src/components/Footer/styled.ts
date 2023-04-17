@@ -11,7 +11,8 @@ export const FooterStyled = styled.footer`
     display: flex;
 
     .footerLinks{
-      width: 927px;
+      min-width: 927px;
+      width: 100%;
       padding: 40px 40px 78px 56px;
       display: flex;
 
@@ -96,8 +97,12 @@ export const FooterStyled = styled.footer`
 
     .footerForm{
       width: 353px;
+      max-width: 353px;
       border-left: 1px solid var(--dark3);
       padding: 64px 43px 86px 44px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       h2{
         font: var(--roboto32-700);
@@ -115,6 +120,7 @@ export const FooterStyled = styled.footer`
       span{
         font: var(--barlow14-400);
         color:var(--gray1);
+        text-align: center;
       }
 
       .footerInputs{
@@ -132,12 +138,16 @@ export const FooterStyled = styled.footer`
           background-color: var(--dark1);
           border: 1px solid var(--dark3);
           border-radius: 4px;
+          padding-left: 16px;
 
           ::placeholder{
-            padding-left: 16px;
             padding-top: 21px;
             font: var(--barlow12-500);
             color: var(--gray1)
+          }
+
+          :hover{
+            background-color: var(--dark2);
           }
         }
 

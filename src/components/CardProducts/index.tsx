@@ -5,6 +5,8 @@ import ProductFlavorSelection from "../ProductFlavorSelection"
 import ProductSizeSelection from "../ProductSizeSelection"
 import { CardProductsStyled } from "./styled"
 import { motion } from "framer-motion"
+import { FiStar } from "react-icons/fi"
+import { BsCart3 } from "react-icons/bs"
 
 const CardProducts = ({ name, img, category, price }: IProducts) => {
 
@@ -20,6 +22,34 @@ const CardProducts = ({ name, img, category, price }: IProducts) => {
         backgroundColor: isHover ? 'var(--background)' : ''
       }}
     >
+      <Button
+        padding="auto"
+        width="24px"
+        height="24px"
+        position="absolute"
+        top="20px"
+        right="16px"
+        zIndex="1"
+        backgroundColor="inherit"
+        hoverBackground="inherit"
+        color="var(--gray1)"
+      >
+        <FiStar />
+      </Button>
+      <Button
+        padding="auto"
+        width="24px"
+        height="24px"
+        position="absolute"
+        top="60px"
+        right="16px"
+        zIndex="1"
+        backgroundColor="inherit"
+        hoverBackground="inherit"
+        color="var(--gray1)"
+      >
+        <BsCart3 />
+      </Button>
       <figure>
         <img src={img} alt={name} />
       </figure>

@@ -5,11 +5,22 @@ export const BlogStyled = styled.section`
   background: linear-gradient(180deg, #3A3A3C 0%, #0B0B0B 101.48%);
   margin-bottom: 64px;
   padding: 40px 56px 56px 56px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg{
+    width: 70%;
+    height: 100%;
+  }
 
   div{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
+    max-width: 1170px;
 
     h2{
       font: var(--roboto32-700);
@@ -21,7 +32,6 @@ export const BlogStyled = styled.section`
         color:var(--orange1);
       }
     }
-
   }
 
   ul{

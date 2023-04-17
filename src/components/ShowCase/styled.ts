@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const ShowCaseStyled = styled.section`
   height: 544px;
+  position: relative;
+
+  svg{
+    width: 70%;
+    height: 100%;
+  }
 
   h2{
     text-transform: uppercase;

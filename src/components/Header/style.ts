@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   height: 104px;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  top:0;
+
   a, span, li{
       text-transform: uppercase;
   }
@@ -72,6 +77,13 @@ export const Navbar = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        div{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
         
         :hover{
           background-color: var(--dark2);
@@ -93,9 +105,11 @@ export const Navbar = styled.div`
       border-radius: 4px;
       background-color: var(--dark1);
       border: 2px solid var(--dark3);
+      color: var(--gray2);
+      padding-left: 16px;
 
-      ::placeholder{
-        padding-left: 16px;
+      :hover{
+        background-color: var(--dark2);
       }
     }
   }
@@ -105,16 +119,17 @@ export const Navbar = styled.div`
       display: flex;
       gap: 20px;
 
-      li, figure, img{
+      li{
         width: 24px;
         height: 24px;
-      }
-
-      img{
-        fill:red;
         
+        svg{
+          width: 100%;
+          height: 100%;
+        }
+
         :hover{
-          fill: var(--white);
+          color: var(--white);
         }
       }
     }
