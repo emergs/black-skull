@@ -7,6 +7,9 @@ export const PartnerStyled = styled.section`
   padding: 40px 205px 56px 205px;
   margin-bottom: 88px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   svg{
     width: 70%;

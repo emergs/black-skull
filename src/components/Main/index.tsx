@@ -7,7 +7,10 @@ import ShowCase from "../ShowCase"
 import Target from "../Target"
 import Card from "../Card"
 import Button from "../Button"
-import { BsArrowLeft } from "react-icons/bs"
+import { SlArrowUp } from "react-icons/sl"
+import { GrContact } from "react-icons/gr"
+import { MdSpeakerNotes } from "react-icons/md"
+import ContactsUs from "../ContactUs"
 
 const Main = () => {
   return (
@@ -21,31 +24,7 @@ const Main = () => {
       <Target />
       <Card />
       <About />
-      {/* <Button
-        padding="auto"
-        width="56px"
-        height="56px"
-        position="fixed"
-        top="455px"
-        right="40px"
-        zIndex="1"
-        backgroundColor="var(--gray1)"
-        hoverBackground="var(--orange1)"
-      >
-        <BsArrowLeft />
-      </Button> <Button
-        padding="auto"
-        width="32px"
-        height="32px"
-        position="absolute"
-        top="521px"
-        right="40px"
-        zIndex="1"
-        backgroundColor="var(--gray2)"
-        hoverBackground="var(--orange2)"
-      >
-        <BsArrowLeft />
-      </Button> */}
+      <ContactsUs />
     </main>
   )
 }

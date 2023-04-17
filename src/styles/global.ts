@@ -49,7 +49,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    width: 1280px;
+    min-width: 1280px;
+    width: 100vw;
     margin: 0 auto;
   }
 `

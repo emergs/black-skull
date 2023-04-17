@@ -6,6 +6,9 @@ export const BlogStyled = styled.section`
   margin-bottom: 64px;
   padding: 40px 56px 56px 56px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   svg{
     width: 70%;
@@ -16,6 +19,8 @@ export const BlogStyled = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
+    max-width: 1170px;
 
     h2{
       font: var(--roboto32-700);

@@ -11,7 +11,8 @@ export const FooterStyled = styled.footer`
     display: flex;
 
     .footerLinks{
-      width: 927px;
+      min-width: 927px;
+      width: 100%;
       padding: 40px 40px 78px 56px;
       display: flex;
 
@@ -96,6 +97,7 @@ export const FooterStyled = styled.footer`
 
     .footerForm{
       width: 353px;
+      max-width: 353px;
       border-left: 1px solid var(--dark3);
       padding: 64px 43px 86px 44px;
       display: flex;

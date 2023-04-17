@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   height: 104px;
   position: fixed;
-  width: 1280px;
+  width: 100vw;
   z-index: 2;
+  top:0;
 
   a, span, li{
       text-transform: uppercase;
