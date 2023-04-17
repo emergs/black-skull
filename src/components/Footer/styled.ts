@@ -104,6 +104,8 @@ export const FooterStyled = styled.footer`
         color:var(--white);
         text-transform: uppercase;
         margin-bottom: 16px;
+        width: 250px;
+        text-align: center;
 
         em{
           color:var(--orange1);
