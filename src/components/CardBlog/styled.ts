@@ -40,7 +40,7 @@ export const CardBlogStyled = styled.li`
       img{
         position: absolute;
         left: 0;
-        top:15px;
+        top:8px;
       }
     }
   }

@@ -21,7 +21,6 @@ export const BlogStyled = styled.section`
         color:var(--orange1);
       }
     }
-
   }
 
   ul{
