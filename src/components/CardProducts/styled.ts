@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
 
-export const CardProductsStyled = styled.li`
+export const CardProductsStyled = styled(motion.li)`
   width:277px;
   height: 100%;
   border: 1px solid var(--background);
@@ -43,6 +44,7 @@ export const CardProductsStyled = styled.li`
   }
 
   form{
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
