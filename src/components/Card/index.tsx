@@ -18,7 +18,7 @@ const Card = () => {
       <motion.div className="card" onMouseEnter={handleHoverInfo} onMouseLeave={handleHoverInfo}>
         <div className="cardInfo">
           <h2>garanta o <em>frete grátis</em></h2>
-          <Button>consulte</Button>
+          <Button padding="10px 24px">consulte</Button>
         </div>
         <div className="cardImage">
           <figure>
@@ -39,7 +39,7 @@ const Card = () => {
       <motion.div className="card" onMouseEnter={handleHoverImage} onMouseLeave={handleHoverImage}>
         <div className="cardInfo">
           <h2>seu dinheiro <em>de volta</em></h2>
-          <Button>entenda</Button>
+          <Button padding="10px 24px">entenda</Button>
         </div>
         <div className="cardImage">
           <figure>

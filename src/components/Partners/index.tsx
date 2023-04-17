@@ -52,7 +52,7 @@ const Partners = () => {
         </ul>
       </nav>
       <div>
-        <Button>Ver Todos</Button>
+        <Button padding="14px 24px">Ver Todos</Button>
       </div>
     </PartnerStyled>
   )

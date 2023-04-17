@@ -79,7 +79,7 @@ const Footer = () => {
             <input type="text" placeholder="Digite seu nome" />
             <input type="text" placeholder="Digite seu email" />
           </div>
-          <Button>enviar</Button>
+          <Button padding="10px 42px">enviar</Button>
         </div>
       </div>
       <div className="footerBottom">

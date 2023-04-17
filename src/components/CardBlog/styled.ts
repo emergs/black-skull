@@ -33,10 +33,14 @@ export const CardBlogStyled = styled.li`
 
     .blog-button-card{
       position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
 
       img{
         position: absolute;
         left: 0;
+        top:15px;
       }
     }
   }

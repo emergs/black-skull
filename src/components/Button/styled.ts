@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { IButton } from "../../interfaces";
 
 export const ButtonStyled = styled.button<IButton>`
-  width: ${({ width }) => width ? width : '120px'};
-  height: ${({ height }) => height ? height : '48px'};
+  padding: ${({ padding }) => padding};
   background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : 'var(--orange1)'};
   border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : '4px'};
   border: ${({ border }) => border ? border : 'none'};

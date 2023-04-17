@@ -26,24 +26,27 @@ const CardBlog = ({ blog }: any) => {
             animate={{ scale: isHovered ? 1.2 : 1 }}
           />
         </div>
-        <div className="blog-info">
+        <motion.div
+          className="blog-info"
+          animate={{ backgroundColor: isHovered ? 'var(--dark2)' : '' }}
+        >
           <span>{blog.date}</span>
           <figcaption>{blog.title}</figcaption>
           <div className="blog-button-card">
-            <Button>Ler mais</Button>
+            <Button padding="10px 35.5px">Ler mais</Button>
             <figure>
               <motion.img
                 src={arrowSquareOut}
                 alt="icone arrowSquareOut"
                 animate={{
-                  marginLeft: isHovered ? '60px' : '0px',
+                  marginLeft: isHovered ? '150px' : '0px',
                   zIndex: isHovered ? 1 : -1,
-                  width: '20px'
+                  width: '24px'
                 }}
               />
             </figure>
           </div>
-        </div>
+        </motion.div>
       </motion.figure>
     </CardBlogStyled>
   )

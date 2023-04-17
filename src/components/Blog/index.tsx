@@ -8,7 +8,7 @@ const Blog = () => {
     <BlogStyled>
       <div>
         <h2>Confira o <em>nosso blog</em></h2>
-        <Button>ler todos</Button>
+        <Button padding="10px 24px">ler todos</Button>
       </div>
       <nav>
         <ul>

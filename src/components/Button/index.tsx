@@ -3,8 +3,6 @@ import { ButtonStyled } from "./styled"
 
 const Button = ({
   children,
-  width,
-  height,
   backgroundColor,
   color,
   font,
@@ -19,8 +17,6 @@ const Button = ({
 }: IButton) => {
   return (
     <ButtonStyled
-      width={width}
-      height={height}
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
       border={border}

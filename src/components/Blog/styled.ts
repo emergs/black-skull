@@ -9,6 +9,7 @@ export const BlogStyled = styled.section`
   div{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     h2{
       font: var(--roboto32-700);
