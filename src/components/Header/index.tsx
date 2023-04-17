@@ -2,8 +2,21 @@ import { navbarOptions, navbarUserOptions } from "../../utils"
 import { HeaderStyled, Navbar, TopContent } from "./style";
 import logo from "../../assets/images/logoPrimary.svg"
 import truck from "../../assets/images/Truck.svg"
+import { motion } from "framer-motion"
+import { useState } from "react";
 
 function Header() {
+
+  const [isHover, setIsHover] = useState(Array(navbarOptions.length).fill(false))
+
+  const handleHover = (indexElement: any) => {
+    setIsHover((elem) => {
+      return elem.map((state, index) => {
+        return index === indexElement ? !state : state
+      })
+    })
+  }
+
   return (
     <HeaderStyled>
       <TopContent>
@@ -23,8 +36,22 @@ function Header() {
         <nav className="navCategories">
           <ul>
             {
-              navbarOptions.map((elem) => {
-                return <li>{elem.name}</li>
+              navbarOptions.map((elem, index) => {
+                return <motion.li key={index}
+                  onMouseEnter={() => handleHover(index)}
+                  onMouseLeave={() => handleHover(index)}
+                >{elem.name}
+                  <motion.div
+                    initial={{
+                      width: 0,
+                      height: '5px',
+                      backgroundColor: 'var(--orange1)'
+                    }}
+                    animate={{
+                      width: isHover[index] ? '100%' : '0'
+                    }}
+                  ></motion.div>
+                </motion.li>
               })
             }
           </ul>
@@ -37,9 +64,7 @@ function Header() {
             {
               navbarUserOptions.map((elem) => {
                 return <li>
-                  <figure>
-                    <img src={elem.icon} alt={elem.name} />
-                  </figure>
+                  {elem.icon}
                 </li>
               })
             }
