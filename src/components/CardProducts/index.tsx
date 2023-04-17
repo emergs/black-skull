@@ -1,14 +1,30 @@
+import { IProducts } from "../../interfaces"
+import Button from "../Button"
+import ProductFlavorSelection from "../ProductFlavorSelection"
+import ProductSizeSelection from "../ProductSizeSelection"
 import { CardProductsStyled } from "./styled"
 
-const CardProducts = ({ product }: any) => {
+const CardProducts = ({ name, img, category, price }: IProducts) => {
   return (
     <CardProductsStyled>
       <figure>
-        <img src={product.img} alt={product.name} />
+        <img src={img} alt={name} />
       </figure>
-      <span className="productName">{product.name}</span>
-      <span className="productPrice">{product.price}</span>
-      <span className="productPortion">{`ou 12X de R$${product.price}`}</span>
+      <span className="productName">{name}</span>
+      <span className="productPrice">{price}</span>
+      <span className="productPortion">{`ou 12X de R$${parseInt(price) / 12}`}</span>
+      <form>
+        {
+          category === 'consumiveis' ?
+            <ProductFlavorSelection />
+            :
+            <ProductSizeSelection />
+        }
+        <Button padding="15px 42px">comprar</Button>
+      </form>
+      <div className="productSizeSelection">
+
+      </div>
     </CardProductsStyled>
   )
 }

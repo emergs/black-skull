@@ -10,7 +10,7 @@ const ShowCase = ({ title }: any) => {
         <ul>
           {
             products.map((product) => {
-              return <CardProducts product={product} />
+              return <CardProducts name={product.name} category={product.category} img={product.img} price={product.price} />
             })
           }
         </ul>

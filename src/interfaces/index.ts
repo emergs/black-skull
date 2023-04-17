@@ -7,7 +7,8 @@ export interface IChildren {
 export interface IProducts {
   name: string,
   price: string,
-  img: string
+  img: string,
+  category: string
 }
 
 export interface IDivLists {
@@ -26,3 +27,4 @@ export interface IButton extends HTMLAttributes<HTMLButtonElement> {
   hoverBackground?: string,
   padding: string,
 }
+

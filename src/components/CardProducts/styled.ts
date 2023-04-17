@@ -8,6 +8,7 @@ export const CardProductsStyled = styled.li`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 
   figure{
     width: 165px;
@@ -40,4 +41,19 @@ export const CardProductsStyled = styled.li`
     font: var(--barlow14-400);
     color:var(--dark3);
   }
-`
+
+  form{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    Button{
+      position: absolute;
+      width: 100%;
+      bottom: -50px;
+    }
+  }
+  `

@@ -56,10 +56,10 @@ export const listCategories = [
 ]
 
 export const products = [
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey },
-  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey }
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey, category: "consumiveis" },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey, category: "consumiveis" },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey, category: "vestuario" },
+  { name: 'Whey Zero (Com Lactase) Black Skull - 900G', price: '349,90', img: whey, category: "vestuario" }
 ]
 
 export const partners = [

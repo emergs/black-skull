@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
     //fonts
     --barlow10-500:500 10px 'Barlow', sans-serif;
+    --barlow10-700:700 10px 'Barlow', sans-serif;
     --barlow12-500:500 12px 'Barlow', sans-serif;
     --barlow12-600:600 12px 'Barlow', sans-serif;
     --barlow12-700:700 12px 'Barlow', sans-serif;
