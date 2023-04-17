@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    max-width: 1280px;
+    width: 1280px;
     margin: 0 auto;
   }
 `

@@ -3,6 +3,8 @@ import { ButtonStyled } from "./styled"
 
 const Button = ({
   children,
+  width,
+  height,
   backgroundColor,
   color,
   font,
@@ -13,12 +15,20 @@ const Button = ({
   hoverBackground,
   padding,
   onClick,
+  position,
+  top,
+  bottom,
+  left,
+  right,
+  zIndex
 
 }: IButton) => {
   return (
     <ButtonStyled
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
+      width={width}
+      height={height}
       border={border}
       color={color}
       font={font}
@@ -27,6 +37,12 @@ const Button = ({
       type={type}
       textTransform={textTransform}
       hoverBackground={hoverBackground}
+      position={position}
+      top={top}
+      bottom={bottom}
+      left={left}
+      right={right}
+      zIndex={zIndex}
     >
       {children}
     </ButtonStyled>

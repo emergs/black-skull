@@ -17,6 +17,8 @@ export interface IDivLists {
 
 export interface IButton extends HTMLAttributes<HTMLButtonElement> {
   children: ReactNode,
+  width?: string,
+  height?: string,
   backgroundColor?: string,
   color?: string,
   font?: string,
@@ -26,5 +28,11 @@ export interface IButton extends HTMLAttributes<HTMLButtonElement> {
   textTransform?: string,
   hoverBackground?: string,
   padding: string,
+  position?: string,
+  top?: string,
+  bottom?: string,
+  left?: string,
+  right?: string,
+  zIndex?: string
 }
 

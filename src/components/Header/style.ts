@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   height: 104px;
+  position: fixed;
+  width: 1280px;
+  z-index: 2;
+
   a, span, li{
       text-transform: uppercase;
   }

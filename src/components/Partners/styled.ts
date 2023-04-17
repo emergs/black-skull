@@ -6,6 +6,12 @@ export const PartnerStyled = styled.section`
   background-image: url(${backgroundPartners});
   padding: 40px 205px 56px 205px;
   margin-bottom: 88px;
+  position: relative;
+
+  svg{
+    width: 70%;
+    height: 100%;
+  }
 
   h2{
     font: var(--roboto40-700);
