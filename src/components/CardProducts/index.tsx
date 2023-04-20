@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import { FiStar } from "react-icons/fi"
 import { BsCart3 } from "react-icons/bs"
 
-const CardProducts = ({ name, img, category, price }: IProducts) => {
+const CardProducts = ({ name, img, category, price, card }: IProducts) => {
 
   const [isHover, setIsHover] = useState(false)
 
@@ -50,7 +50,7 @@ const CardProducts = ({ name, img, category, price }: IProducts) => {
       >
         <BsCart3 />
       </Button>
-      <figure>
+      <figure ref={card}>
         <img src={img} alt={name} />
       </figure>
       <span className="productName">{name}</span>

@@ -3,8 +3,15 @@ import { products } from "../../utils"
 import Button from "../Button"
 import CardProducts from "../CardProducts"
 import { ShowCaseStyled } from "./styled"
+import { useContext, useRef } from "react"
+import { SlidersContexts } from "../../contexts/slider"
 
 const ShowCase = ({ title }: any) => {
+
+  const carousel = useRef(null)
+  const card = useRef(null)
+  const { nextImage, previusImage } = useContext(SlidersContexts)
+
   return (
     <ShowCaseStyled>
       <h2>{title}</h2>
@@ -18,14 +25,15 @@ const ShowCase = ({ title }: any) => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => previusImage(e, carousel, card)}
       >
         <BsArrowLeft />
       </Button>
       <nav>
-        <ul>
+        <ul ref={carousel}>
           {
             products.map((product) => {
-              return <CardProducts name={product.name} category={product.category} img={product.img} price={product.price} />
+              return <CardProducts name={product.name} category={product.category} img={product.img} price={product.price} card={card}/>
             })
           }
         </ul>
@@ -40,6 +48,7 @@ const ShowCase = ({ title }: any) => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => nextImage(e, carousel, card)}
       >
         <BsArrowRight />
       </Button>

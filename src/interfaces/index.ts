@@ -1,4 +1,4 @@
-import { HTMLAttributes, MouseEvent, ReactNode, RefObject } from "react";
+import { HTMLAttributes, MouseEvent, MutableRefObject, ReactNode, RefObject } from "react";
 
 export interface IChildren {
   children: ReactNode
@@ -9,6 +9,7 @@ export interface IProducts {
   price: string,
   img: string,
   category: string
+  card: MutableRefObject<null>
 }
 
 export interface IDivLists {

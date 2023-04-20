@@ -20,6 +20,11 @@ export const ShowCaseStyled = styled.section`
     margin-bottom: 24px;
   }
 
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+
   ul{
     display: flex;
     justify-content: center;
@@ -28,5 +33,12 @@ export const ShowCaseStyled = styled.section`
     margin-bottom: 143px;
     padding-left:56px;
     padding-right: 56px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 1200px;
+
+    ::-webkit-scrollbar{
+      display: none;
+    }
   }
 `
