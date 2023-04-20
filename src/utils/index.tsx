@@ -56,6 +56,12 @@ export const listCategories = [
   { name: 'Packs', img: protein, link: "#" },
   { name: 'Aminoácidos', img: protein, link: "#" },
   { name: 'Saúde', img: protein, link: "#" },
+  { name: 'Proteínas', img: protein, link: "#" },
+  { name: 'Hipercalóricos', img: protein, link: "#" },
+  { name: 'Creatina', img: protein, link: "#" },
+  { name: 'Packs', img: protein, link: "#" },
+  { name: 'Aminoácidos', img: protein, link: "#" },
+  { name: 'Saúde', img: protein, link: "#" },
 ]
 
 export const products = [

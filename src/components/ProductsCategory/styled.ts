@@ -4,6 +4,8 @@ export const ProductsCategoryStyled = styled.section`
   height: 330px;
   background-color: var(--white);
   position: relative;
+  display: flex;
+  justify-content: center;
 
   svg{
     width: 70%;
@@ -11,10 +13,19 @@ export const ProductsCategoryStyled = styled.section`
   }
 
   ul{
+    max-width: 1280px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap:30px;
     padding:56px;
     padding-bottom: 64px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+      display: none;
+    }
 
     li, figure{
       width: 178px;
@@ -25,7 +36,6 @@ export const ProductsCategoryStyled = styled.section`
         height: 178px;
         background: var(--background);
         border-radius: 50%;
-        //padding: 35px;
         position: relative;
         z-index: 0;
 

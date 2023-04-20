@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes, MouseEvent, ReactNode, RefObject } from "react";
 
 export interface IChildren {
   children: ReactNode
@@ -34,5 +34,18 @@ export interface IButton extends HTMLAttributes<HTMLButtonElement> {
   left?: string,
   right?: string,
   zIndex?: string
+}
+
+export interface ISliders {
+  nextImage: (
+    e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
+    carousel: RefObject<HTMLUListElement>,
+    card: RefObject<HTMLImageElement>
+  ) => void
+  previusImage: (
+    e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
+    carousel: RefObject<HTMLUListElement>,
+    card: RefObject<HTMLImageElement>
+  ) => void
 }
 
