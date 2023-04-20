@@ -75,6 +75,9 @@ export const partners = [
   { name: 'cedric mcmillan', img: partner1, description: '' },
   { name: 'cedric mcmillan', img: partner2, description: '' },
   { name: 'cedric mcmillan', img: partner3, description: '' },
+  { name: 'cedric mcmillan', img: partner1, description: '' },
+  { name: 'cedric mcmillan', img: partner2, description: '' },
+  { name: 'cedric mcmillan', img: partner3, description: '' },
 ]
 
 export const blogContent = [

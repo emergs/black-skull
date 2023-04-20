@@ -30,10 +30,18 @@ export const PartnerStyled = styled.section`
   ul{
     display: flex;
     gap: 20px;
+    max-width: 900px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+      display: none;
+    }
 
     li{
       width: 277px;
       height: 294px;
+      flex: none;
 
       figure{
         position: relative;

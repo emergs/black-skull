@@ -3,10 +3,15 @@ import Button from "../Button"
 import { PartnerStyled } from "./styled"
 import { HiArrowRight } from "react-icons/hi"
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useContext, useRef, useState } from "react"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+import { SlidersContexts } from "../../contexts/slider"
 
 const Partners = () => {
+
+  const carousel = useRef(null)
+  const card = useRef(null)
+  const { nextImage, previusImage } = useContext(SlidersContexts)
 
   const [isHovered, setIsHovered] = useState(Array(partners.length).fill(false));
 
@@ -31,11 +36,12 @@ const Partners = () => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => previusImage(e, carousel, card)}
       >
         <BsArrowLeft />
       </Button>
       <nav>
-        <ul>
+        <ul ref={carousel}>
           {
             partners.map((partner, index) => {
               return <motion.li key={index}
@@ -43,7 +49,7 @@ const Partners = () => {
                 onMouseLeave={() => handleHover(index)}
               >
                 <figure>
-                  <img src={partner.img} alt={partner.name} />
+                  <img src={partner.img} alt={partner.name} ref={card} />
                   <motion.div
                     className="infoPartners"
                     animate={{
@@ -73,6 +79,7 @@ const Partners = () => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => nextImage(e, carousel, card)}
       >
         <BsArrowRight />
       </Button>
