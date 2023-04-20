@@ -4,7 +4,7 @@ import { CardBlogStyled } from "./styled"
 import { motion } from "framer-motion"
 import arrowSquareOut from "../../assets/images/ArrowSquareOut.svg"
 
-const CardBlog = ({ blog }: any) => {
+const CardBlog = ({ blog, card }: any) => {
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -20,7 +20,7 @@ const CardBlog = ({ blog }: any) => {
         style={{ position: "relative" }}
       >
         <div className="blog-image">
-          <motion.img
+          <motion.img ref={card}
             src={blog.img}
             alt={blog.title}
             animate={{ scale: isHovered ? 1.2 : 1 }}

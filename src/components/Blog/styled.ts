@@ -38,5 +38,12 @@ export const BlogStyled = styled.section`
       height: 380px;
       display: flex;
       gap:20px;
+      max-width: 1280px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+
+      ::-webkit-scrollbar{
+        display: none;
+      }
     }
 `

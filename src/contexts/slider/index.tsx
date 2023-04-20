@@ -12,6 +12,7 @@ const SlidersProviders = ({ children }: IChildren) => {
   ) => {
     e.preventDefault()
     if (caroseul.current && card.current) {
+      console.log(caroseul.current)
       caroseul.current.scrollLeft += card.current?.clientWidth
     }
   }
@@ -23,6 +24,7 @@ const SlidersProviders = ({ children }: IChildren) => {
   ) => {
     e.preventDefault()
     if (caroseul.current && card.current) {
+      console.log(card.current)
       caroseul.current.scrollLeft -= card.current?.clientWidth
     }
   }

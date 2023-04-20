@@ -81,6 +81,9 @@ export const blogContent = [
   { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog1 },
   { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog2 },
   { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog3 },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog1 },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog2 },
+  { title: 'Lorem ipsum dolor sit amet, consectetur adipis', date: '03.05.21', link: '#', img: blog3 },
 ]
 
 export const targets = [

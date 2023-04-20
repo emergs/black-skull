@@ -5,6 +5,7 @@ export const CardBlogStyled = styled.li`
   width: 376px;
   border: 1px solid var(--dark3);
   overflow: hidden;
+  flex: none;
 
   .blog-image{
     height: 200px;

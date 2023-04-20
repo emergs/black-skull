@@ -3,8 +3,15 @@ import { blogContent } from "../../utils"
 import Button from "../Button"
 import CardBlog from "../CardBlog"
 import { BlogStyled } from "./styled"
+import { useContext, useRef } from "react"
+import { SlidersContexts } from "../../contexts/slider"
 
 const Blog = () => {
+
+  const carousel = useRef(null)
+  const card = useRef(null)
+  const { nextImage, previusImage } = useContext(SlidersContexts)
+
   return (
     <BlogStyled>
       <div>
@@ -21,14 +28,15 @@ const Blog = () => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => previusImage(e, carousel, card)}
       >
         <BsArrowLeft />
       </Button>
       <nav>
-        <ul>
+        <ul ref={carousel}>
           {
             blogContent.map((blog) => {
-              return <CardBlog blog={blog} />
+              return <CardBlog blog={blog} card={card}/>
             })
           }
         </ul>
@@ -43,6 +51,7 @@ const Blog = () => {
         zIndex="1"
         backgroundColor="var(--gray2)"
         hoverBackground="var(--orange2)"
+        onClick={(e) => nextImage(e, carousel, card)}
       >
         <BsArrowRight />
       </Button>
