@@ -9,6 +9,7 @@ import { SlidersContexts } from "../../contexts/slider"
 
 const Partners = () => {
 
+  const partnersView = useRef(null)
   const carousel = useRef(null)
   const card = useRef(null)
   const { nextImage, previusImage } = useContext(SlidersContexts)
@@ -24,7 +25,7 @@ const Partners = () => {
   };
 
   return (
-    <PartnerStyled>
+    <PartnerStyled ref={partnersView}>
       <h2>Conheça a Tropa <em>Black Skull</em></h2>
       <Button
         padding="auto"

@@ -23,19 +23,19 @@ export const ShowCaseStyled = styled.section`
   nav{
     display: flex;
     justify-content: center;
+    overflow-x: scroll;
   }
 
   ul{
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 341px;
+    height: 361px;
     margin-bottom: 143px;
     padding-left:56px;
     padding-right: 56px;
-    overflow-x: auto;
     scroll-behavior: smooth;
-    max-width: 1200px;
+    max-width: 900px;
 
     ::-webkit-scrollbar{
       display: none;

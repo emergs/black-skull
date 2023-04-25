@@ -50,3 +50,4 @@ export interface ISliders {
   ) => void
 }
 
+
