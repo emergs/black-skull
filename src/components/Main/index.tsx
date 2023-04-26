@@ -29,7 +29,7 @@ const Main = () => {
     <main style={{ position: 'relative' }}>
       <Entrance />
       <ProductsCategory />
-      <ShowCase title="Lançamentos" id="clothing" />
+      <ShowCase title="Lançamentos" id="launch" />
       <Partners />
       <ShowCase title="Promoções" id="promotions" />
       <Blog />

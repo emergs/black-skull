@@ -3,7 +3,7 @@ import logo from "../../assets/images/logoSecondary.svg"
 
 const About = () => {
   return (
-    <AboutStyled>
+    <AboutStyled id="about">
       <figure>
         <img src={logo} alt="logo da black skull" />
       </figure>

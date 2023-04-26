@@ -13,7 +13,7 @@ const Blog = () => {
   const { nextImage, previusImage } = useContext(SlidersContexts)
 
   return (
-    <BlogStyled>
+    <BlogStyled id="blog">
       <div>
         <h2>Confira o <em>nosso blog</em></h2>
         <Button padding="10px 24px">ler todos</Button>

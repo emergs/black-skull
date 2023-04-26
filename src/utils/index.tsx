@@ -36,11 +36,13 @@ import { ReactNode } from "react";
 
 export const navbarOptions = [
   { name: 'categorias', link: '#', id: 'category' },
-  { name: 'vestuário', link: '#', id: 'clothing' },
+  { name: 'lançamentos', link: '#', id: 'launch' },
   { name: 'objetivos', link: '#', id: 'goals' },
   { name: 'promoções', link: '#', id: 'promotions' },
   { name: 'atletas', link: '#', id: 'athletes' },
-  { name: 'assinatura', link: '#', id: 'signatures' }
+  { name: 'assinatura', link: '#', id: 'signatures' },
+  { name: 'blog', link: '#', id: 'blog' },
+  { name: 'sobre', link: '#', id: 'about' }
 ]
 
 export const navbarUserOptions = [
