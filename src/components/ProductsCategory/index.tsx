@@ -12,7 +12,7 @@ const ProductsCategory = () => {
   const { nextImage, previusImage } = useContext(SlidersContexts)
 
   return (
-    <ProductsCategoryStyled>
+    <ProductsCategoryStyled id="category">
       <Button
         padding="auto"
         width="32px"

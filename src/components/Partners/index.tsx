@@ -3,7 +3,7 @@ import Button from "../Button"
 import { PartnerStyled } from "./styled"
 import { HiArrowRight } from "react-icons/hi"
 import { motion } from "framer-motion"
-import { useContext, useRef, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { SlidersContexts } from "../../contexts/slider"
 
@@ -12,6 +12,7 @@ const Partners = () => {
   const partnersView = useRef(null)
   const carousel = useRef(null)
   const card = useRef(null)
+
   const { nextImage, previusImage } = useContext(SlidersContexts)
 
   const [isHovered, setIsHovered] = useState(Array(partners.length).fill(false));
@@ -25,7 +26,7 @@ const Partners = () => {
   };
 
   return (
-    <PartnerStyled ref={partnersView}>
+    <PartnerStyled ref={partnersView} id="athletes">
       <h2>Conheça a Tropa <em>Black Skull</em></h2>
       <Button
         padding="auto"

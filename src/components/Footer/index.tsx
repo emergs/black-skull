@@ -7,7 +7,7 @@ import logoBlackSkull from "../../assets/images/logoBlackSkullPrimary2.svg"
 
 const Footer = () => {
   return (
-    <FooterStyled>
+    <FooterStyled id="signatures">
       <div className="footerTop">
         <div className="footerLinks">
           <div className="footerSocialMedias">

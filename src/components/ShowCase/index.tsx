@@ -6,14 +6,14 @@ import { ShowCaseStyled } from "./styled"
 import { useContext, useRef } from "react"
 import { SlidersContexts } from "../../contexts/slider"
 
-const ShowCase = ({ title }: any) => {
+const ShowCase = ({ title, id }: any) => {
 
   const carousel = useRef(null)
   const card = useRef(null)
   const { nextImage, previusImage } = useContext(SlidersContexts)
 
   return (
-    <ShowCaseStyled>
+    <ShowCaseStyled id={id}>
       <h2>{title}</h2>
       <Button
         padding="auto"
@@ -33,7 +33,7 @@ const ShowCase = ({ title }: any) => {
         <ul ref={carousel}>
           {
             products.map((product) => {
-              return <CardProducts name={product.name} category={product.category} img={product.img} price={product.price} card={card}/>
+              return <CardProducts name={product.name} category={product.category} img={product.img} price={product.price} card={card} />
             })
           }
         </ul>

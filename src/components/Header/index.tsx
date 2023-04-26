@@ -42,7 +42,7 @@ function Header() {
                 return <motion.li key={index}
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={() => handleHover(index)}
-                  onClick={() => handleButtonClick(elem.id)}
+                  onClick={()=> handleButtonClick(elem.id)}
                 >{elem.name}
                   <motion.div
                     initial={{

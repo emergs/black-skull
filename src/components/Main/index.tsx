@@ -11,15 +11,27 @@ import { SlArrowUp } from "react-icons/sl"
 import { GrContact } from "react-icons/gr"
 import { MdSpeakerNotes } from "react-icons/md"
 import ContactsUs from "../ContactUs"
+import { useContext, useEffect } from "react"
+import { MenuContexts } from "../../contexts/menu"
 
 const Main = () => {
+
+  const { scrollToId } = useContext(MenuContexts)
+
+  useEffect(() => {
+    const target = document.getElementById(scrollToId)
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [scrollToId])
+
   return (
     <main style={{ position: 'relative' }}>
       <Entrance />
       <ProductsCategory />
-      <ShowCase title="Lançamentos" />
+      <ShowCase title="Lançamentos" id="clothing" />
       <Partners />
-      <ShowCase title="Promoções" />
+      <ShowCase title="Promoções" id="promotions" />
       <Blog />
       <Target />
       <Card />

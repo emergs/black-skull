@@ -19,7 +19,7 @@ const Target = () => {
   }
 
   return (
-    <TargetStyled>
+    <TargetStyled id="goals">
       <h2>Objetivos</h2>
       <nav>
         <ul>
